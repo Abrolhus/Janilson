@@ -11,7 +11,7 @@ using namespace std;
 void save(string);
 void read();
 
-// a fun玢o main inicia a execu玢o do programa
+// a funcão main inicia a execucão do programa
 int main()
 {
 	stringstream ss;
@@ -24,7 +24,7 @@ int main()
 	string s = ss.str();
 	save(s);
 	//read();
-	return 0;  // indica termina玢o bem-sucedida
+	return 0;  // indica terminacão bem-sucedida
 
 } // fim de main
 
@@ -46,7 +46,7 @@ void read()
 {
 	string linha;
 
-	ifstream arquivoDeEntrada("exemplo01.txt", ios::in); // cria objeto da classe ifstream para leitura de arquivos
+	ifstream arquivoDeEntrada("data.txt", ios::in); // cria objeto da classe ifstream para leitura de arquivos
 
 	if (arquivoDeEntrada) // verifica se o objeto foi criado
 	{
