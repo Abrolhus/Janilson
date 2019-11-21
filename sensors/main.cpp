@@ -5,82 +5,7 @@ COMO COMPILAR E TESTAR OS CODIGOS USANDO NAOQI:
             senha: nao
           ./data/disable (após esse comando, o robo reiniciará no modo naoqi)
 
-1: na pasta do projeto - > 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=
-=
-
-
-
-                           qibuild make -c rinobot-robot
+1: na pasta do projeto - >  qibuild make -c rinobot-robot
 
 Se nao tiver erros de codigo, o executavel (".exe") está em: build-rinobot-robot/sdk/bin/sensors
 
@@ -167,6 +92,7 @@ int main(int argc, char *argv[])
     
     int interacoes = 20000;
     int contador = 0;
+    int waitTime = 25;
     for(int i = 0; i < interacoes; i++)
     {
       cout << i << "/" << interacoes << " ";
@@ -181,9 +107,9 @@ int main(int argc, char *argv[])
       
       ss << endl;
       
-      cout<< contador;
-      contador += 50;
-      t.Wait(25);  
+      cout<< contador << endl;
+      contador += waitTime;
+      t.Wait(waitTime);  
     }
     motion.rest();
     cout << ss.str() << endl;
