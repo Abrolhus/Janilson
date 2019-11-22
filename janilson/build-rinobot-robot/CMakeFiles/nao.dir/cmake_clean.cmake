@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/nao.dir/main.cpp.o"
   "CMakeFiles/nao.dir/src/NAO.cpp.o"
   "CMakeFiles/nao.dir/src/Timer.cpp.o"
+  "CMakeFiles/nao.dir/src/FileManager.cpp.o"
   "sdk/bin/nao.pdb"
   "sdk/bin/nao"
 )

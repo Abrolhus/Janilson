@@ -1,11 +1,15 @@
 // AnaliseDeSensores.h
-#ifndef AnaliseDeSensores_H
-#define AnaliseDeSensores_H
+#ifndef ANALISEDESENSORES_H
+#define ANALISEDESENSORES_H
 
-#include "timer.h"
+#include "Timer.h"
 #include <string>
+#include <iostream>
 #include <fstream>
 #include <sstream>
+#include <iomanip>
+using namespace std;
+
 struct Sensor
 {
     string name;
@@ -17,15 +21,16 @@ struct Sensor
 class AnaliseDeSensores
 {
     private:
-        int waitTime = 25; //ms
-
-
-
-
+        int defautWaitTime; //ms
+        int nInteracoes;
     public:
-    AnaliseDeSensores(Sensor s1, ...);
-    void GetData2txtLoop(int nInteracoes, Sensor s1, ...)
-    ~AnaliseDeSensores();
+        AnaliseDeSensores();
+        void analisarSensores(int nInteracoes);
+        void analisarSensores(int nInteracoes, int waitTime);
+        void analisarSensoresSemLoop(int nInteracoes, int waitTime);
+        ~AnaliseDeSensores();
+        //void addSensor(Sensor sen);
+
 };
 
 

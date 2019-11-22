@@ -87,7 +87,9 @@ int main(int argc, char *argv[])
     AL::ALMemoryProxy memory("127.0.0.1", 9559);
 
     motion.wakeUp();
-    posture.goToPosture("StandInit", 1.0f);
+    //posture.goToPosture("StandInit", 1.0f);
+    posture.goToPosture("Crouch", 1.0f);
+
     ss << "Ax"<< setw(15) << "Ay"<< setw(15)<< "Az"<< setw(15)<< "Gx"<< setw(15)<< "Gy"<< setw(15)<< "AnX"<< setw(15)<< "AnY"<< setw(15)<< "AnZ"<< setw(15)<< endl;
     
     int interacoes = 20000;
@@ -111,6 +113,7 @@ int main(int argc, char *argv[])
       contador += waitTime;
       t.Wait(waitTime);  
     }
+    posture.goToPosture("Crouch", 1.0f);
     motion.rest();
     cout << ss.str() << endl;
     save(ss.str());

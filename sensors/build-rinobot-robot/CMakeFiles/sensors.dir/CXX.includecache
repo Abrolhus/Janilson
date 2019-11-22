@@ -13034,12 +13034,6 @@ qi/future.hpp
 qitype/anyfunction.hpp
 -
 
-/home/notebook/Rinobot/Janilson/sensors/Timer.cpp
-Timer.h
-/home/notebook/Rinobot/Janilson/sensors/Timer.h
-unistd.h
--
-
 /home/notebook/Rinobot/Janilson/sensors/Timer.h
 time.h
 -

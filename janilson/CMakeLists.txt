@@ -4,5 +4,5 @@ find_package(qibuild)
 
 include_directories(".")
 
-qi_create_bin(nao main.cpp src/NAO.cpp src/Timer.cpp)
+qi_create_bin(nao main.cpp src/NAO.cpp src/Timer.cpp src/FileManager.cpp)
 qi_use_lib(nao ALCOMMON ALPROXIES)

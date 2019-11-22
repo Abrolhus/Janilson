@@ -196,6 +196,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/nao.dir/build.make CMakeFiles/nao.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/FileManager.o: src/FileManager.cpp.o
+
+.PHONY : src/FileManager.o
+
+# target to build an object file
+src/FileManager.cpp.o:
+	$(MAKE) -f CMakeFiles/nao.dir/build.make CMakeFiles/nao.dir/src/FileManager.cpp.o
+.PHONY : src/FileManager.cpp.o
+
+src/FileManager.i: src/FileManager.cpp.i
+
+.PHONY : src/FileManager.i
+
+# target to preprocess a source file
+src/FileManager.cpp.i:
+	$(MAKE) -f CMakeFiles/nao.dir/build.make CMakeFiles/nao.dir/src/FileManager.cpp.i
+.PHONY : src/FileManager.cpp.i
+
+src/FileManager.s: src/FileManager.cpp.s
+
+.PHONY : src/FileManager.s
+
+# target to generate assembly for a file
+src/FileManager.cpp.s:
+	$(MAKE) -f CMakeFiles/nao.dir/build.make CMakeFiles/nao.dir/src/FileManager.cpp.s
+.PHONY : src/FileManager.cpp.s
+
 src/NAO.o: src/NAO.cpp.o
 
 .PHONY : src/NAO.o
@@ -266,6 +293,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/FileManager.o"
+	@echo "... src/FileManager.i"
+	@echo "... src/FileManager.s"
 	@echo "... src/NAO.o"
 	@echo "... src/NAO.i"
 	@echo "... src/NAO.s"
